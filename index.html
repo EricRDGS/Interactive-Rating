@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Rating</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="page">
+        <section class="card" id="card">
+            <img src="src/images/icon-star.svg" alt="Star">
+            <div class="info">
+                <h2>How did we do?</h2>
+                <p>Please let us know we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            </div>
+            <div class="numbers">
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="4">
+                <input type="button" value="5">
+            </div>
+            <button type="button" id="submit">Submit</button>
+        </section>
+        <section class="thank-you to-hold" id="thank-you">
+            <img src="src/images/illustration-thank-you.svg" alt="Thank You">
+            <p class="feedback">You selected <span id="number-selected"></span> Out of 5</p>
+            <div class="info-extra">
+                <h2>Thank you!</h2>
+                <p>We appreciate you talking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>

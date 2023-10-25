@@ -1,0 +1,115 @@
+html{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--neutral-very-dark-blue);
+}
+
+.page .card, .page .thank-you{
+    width: 340px;
+    height: 340px;
+    border-radius: 20px;
+    background-color: var(--neutral-dark-blue);
+    padding: 1.5rem;
+}
+
+.page .card img{
+    padding: 10px;
+    background-color: var(--neutral-dark-blu3);
+    border-radius: 100%;
+    margin-top: .5rem;
+}
+
+.page .card .info{
+    margin-top: 1rem;
+}
+
+.page .card .info h2, .page .thank-you h2{
+    color: #fff;
+}
+
+.page .card .info p, .page .thank-you p{
+    color: var(--neutral-medium-grey);
+    line-height: 20px;
+    margin-top: .8rem;
+}
+
+.page .card .numbers{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem
+}
+
+.page .card .numbers input{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--neutral-dark-blu3);
+    color: var(--neutral-light-grey);
+    font-weight: 700;
+}
+
+.page .card .numbers input:hover{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    background-color: var(--primary-orange);
+}
+
+.page .card .numbers input:focus{
+    transition: .4s ease-in-out;
+    color: #fff;
+    background-color: var(--neutral-medium-grey);
+}
+
+.page .card #submit{
+    margin-top: 2rem;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: var(--primary-orange);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.page .card #submit:hover{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    color: var(--primary-orange);
+    background-color: #fff;
+}
+
+.page .thank-you{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page .thank-you .feedback{
+    color: var(--primary-orange);
+    padding: 5px 15px;
+    border-radius: 25px;
+    background-color: var(--neutral-dark-blu3);
+    margin-top: 1.5rem;
+}
+
+.page .thank-you .info-extra{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.page .to-hold{
+    display: none;
+}
